@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { LanguageProvider } from './context/LanguageContext'
 import WaveOverlay from './components/ui/WaveOverlay'
 import LoadingScreen from './components/ui/LoadingScreen'
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/connect" element={<Connect />} />
       </Routes>
       <Footer />
+      <Analytics />
     </LanguageProvider>
   )
 }
