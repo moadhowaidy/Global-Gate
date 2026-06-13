@@ -1,0 +1,48 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#040A2C"/>
+
+  <defs>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgba(184,137,60,0.04)" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(184,137,60,0.06)"/>
+      <stop offset="100%" stop-color="rgba(184,137,60,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <ellipse cx="600" cy="315" rx="500" ry="300" fill="url(#glow)"/>
+
+  <!-- Top rule -->
+  <rect x="440" y="165" width="320" height="5" fill="#B8893C"/>
+  <!-- Bottom rule -->
+  <rect x="370" y="455" width="320" height="5" fill="#B8893C"/>
+
+  <!-- Left G -->
+  <path d="M170 315 C170 240 210 195 280 195 L280 220 C228 220 200 250 200 315 C200 380 228 410 280 410
+           L280 330 L238 330 L238 310 L310 310 L310 432 L280 432
+           C210 432 170 395 170 315Z" fill="#B8893C"/>
+
+  <!-- Right G (mirror) -->
+  <path d="M1030 315 C1030 240 990 195 920 195 L920 220 C972 220 1000 250 1000 315 C1000 380 972 410 920 410
+           L920 330 L962 330 L962 310 L890 310 L890 432 L920 432
+           C990 432 1030 395 1030 315Z" fill="#B8893C"/>
+
+  <!-- I-bars -->
+  <rect x="458" y="255" width="8" height="120" fill="#B8893C" opacity="0.65"/>
+  <rect x="734" y="255" width="8" height="120" fill="#B8893C" opacity="0.65"/>
+
+  <!-- Gold divider line -->
+  <rect x="480" y="490" width="240" height="1.5" fill="rgba(184,137,60,0.4)"/>
+
+  <!-- Company name -->
+  <text x="600" y="540" text-anchor="middle" font-family="Georgia, serif" font-size="28"
+        font-weight="400" letter-spacing="8" fill="#B8893C">
+    GLOBAL GATE
+  </text>
+  <text x="600" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="20"
+        font-weight="400" fill="rgba(184,137,60,0.6)">
+    البوابة العالمية
+  </text>
+</svg>

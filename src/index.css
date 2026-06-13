@@ -1,0 +1,41 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #040A2C;
+  }
+  body {
+    background-color: #040A2C;
+    color: #EDE5D0;
+    background-image: none;
+  }
+  [dir='rtl'] body,
+  [dir='rtl'] p,
+  [dir='rtl'] span,
+  [dir='rtl'] a {
+    font-family: 'Noto Naskh Arabic', serif;
+  }
+}
+
+@layer utilities {
+  .gold-rule {
+    width: 40px;
+    height: 2px;
+    background: #B8893C;
+  }
+  .gold-grid {
+    gap: 1.5px;
+    background: rgba(184, 137, 60, 0.18);
+  }
+  .gold-grid > * {
+    background: #040A2C;
+  }
+  .map-dark {
+    filter: saturate(0.4) brightness(0.55) contrast(1.2) hue-rotate(178deg);
+  }
+}

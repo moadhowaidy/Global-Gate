@@ -1,0 +1,23 @@
+﻿{
+  "name": "Global Gate | البوابة العالمية",
+  "short_name": "Global Gate",
+  "description": "Investment & Business Advisory — Tripoli, Libya",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#040A2C",
+  "theme_color": "#040A2C",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
