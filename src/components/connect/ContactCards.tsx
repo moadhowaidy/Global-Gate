@@ -78,6 +78,17 @@ export default function ContactCards() {
                   <p className="font-sans text-[#EDE5D0] text-base rtl:font-arabic">
                     {lang === 'en' ? contact.addressEn : contact.addressAr}
                   </p>
+                  <p className="font-sans text-[#7A8BAA]/60 text-xs mt-0.5 rtl:font-arabic">
+                    {lang === 'en' ? contact.landmarkEn : contact.landmarkAr}
+                  </p>
+                  <a
+                    href={contact.googleMaps}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-sans text-[#B8893C]/70 text-xs mt-1.5 inline-block hover:text-[#B8893C] transition-colors duration-200"
+                  >
+                    {lang === 'en' ? '↗ View on Google Maps' : '↗ عرض على خرائط جوجل'}
+                  </a>
                 </div>
               </li>
 

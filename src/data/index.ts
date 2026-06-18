@@ -15,13 +15,21 @@ export const contact = {
   phoneDisplay: '+218 93 555 5639',
   email: 'info@globalgate.ly',
   whatsapp: 'https://wa.me/218935555639',
-  addressEn: 'Ain Zara, near Al-Qarqani Petrol Station, Tripoli, Libya',
-  addressAr: 'عين زارة، بالقرب من محطة وقود القرقني، طرابلس، ليبيا',
+
+  latitude: 32.8361,
+  longitude: 13.170,
+
+  addressEn: 'Al-Haddad, Al-Khadra, Tripoli, Libya',
+  addressAr: 'حي الحداد، الهضبة الخضراء، طرابلس، ليبيا',
+
+  landmarkEn: 'Near Masjeed Alsahaba and Mall 3 Al-Haddad',
+  landmarkAr: 'بالقرب من مسجد الصحابة ومول 3 الحداد',
+
   googleMaps: 'https://maps.app.goo.gl/tsRpPAQNgebT7j778',
   hoursEn: 'Sunday – Thursday · 9:00 AM – 5:00 PM (Libya Time)',
   hoursAr: 'الأحد – الخميس · ٩:٠٠ صباحاً – ٥:٠٠ مساءً (بتوقيت ليبيا)',
   mapEmbed:
-    'https://www.openstreetmap.org/export/embed.html?bbox=13.18,32.82,13.24,32.87&layer=mapnik&marker=32.848,13.204',
+    'https://www.openstreetmap.org/export/embed.html?bbox=13.150%2C32.820%2C13.195%2C32.855&layer=mapnik&marker=32.8361%2C13.170',
 }
 
 export const heroContent = {

@@ -22,7 +22,11 @@ export default function MapEmbed() {
             src={contact.mapEmbed}
             className="w-full h-96 border-none map-dark"
             loading="lazy"
-            title="Global Gate HQ - Ain Zara, Tripoli Libya"
+            title={
+              lang === 'en'
+                ? 'Global Gate — Al-Haddad, Tripoli, Libya'
+                : 'البوابة العالمية — حي الحداد، طرابلس، ليبيا'
+            }
           />
           <div className="absolute bottom-4 ltr:left-4 rtl:right-4 bg-[#040A2C]/92 border border-[#B8893C] p-3 backdrop-blur-sm">
             <h4 className="font-display text-[#B8893C] text-sm mb-1">
@@ -30,6 +34,9 @@ export default function MapEmbed() {
             </h4>
             <p className="font-sans text-[#7A8BAA] text-xs rtl:font-arabic">
               {lang === 'en' ? contact.addressEn : contact.addressAr}
+            </p>
+            <p className="font-sans text-[#7A8BAA]/60 text-xs mt-0.5 rtl:font-arabic">
+              {lang === 'en' ? contact.landmarkEn : contact.landmarkAr}
             </p>
             <a
               href={contact.googleMaps}
