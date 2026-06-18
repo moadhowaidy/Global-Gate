@@ -91,20 +91,7 @@ export default function Footer() {
       {/* Dark bottom bar — Task 5C */}
       <div className="bg-[#02061C] border-t border-[#B8893C]/12">
         <div className="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 rtl:flex-row-reverse">
-          <div className="flex items-center gap-3 rtl:flex-row-reverse">
-            <Logo size="footer" />
-            <div className="flex flex-col gap-0.5 rtl:items-end">
-              <span className="font-display text-[#B8893C] text-sm tracking-[0.14em] uppercase leading-none">
-                {lang === 'en' ? 'GLOBAL GATE' : 'البوابة العالمية'}
-              </span>
-              <span className="text-[#7A8BAA]/50 text-[9px] tracking-widest uppercase">
-                {lang === 'en'
-                  ? `Tripoli, Libya — Est. ${company.founded}`
-                  : `طرابلس، ليبيا — تأسست ${company.founded}`}
-              </span>
-            </div>
-          </div>
-          <p className="font-sans text-[#7A8BAA] text-xs tracking-wide rtl:font-arabic">
+<p className="font-sans text-[#7A8BAA] text-xs tracking-wide rtl:font-arabic">
             {lang === 'en'
               ? `© ${company.founded} Global Gate — All rights reserved`
               : `© ${company.founded} البوابة العالمية — جميع الحقوق محفوظة`}
