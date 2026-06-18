@@ -1,6 +1,8 @@
 export const company = {
   nameEn: 'Global Gate',
   nameAr: 'البوابة العالمية',
+  subtitleEn: 'Investment & Business Services',
+  subtitleAr: 'خدمات الاستثمار والأعمال',
   taglineEn: 'Trusted partner. Local knowledge with global standards.',
   taglineAr: 'شريك موثوق. معرفة محلية بمعايير عالمية.',
   founded: 2026,
@@ -11,7 +13,7 @@ export const company = {
 export const contact = {
   phone: '+218935555639',
   phoneDisplay: '+218 93 555 5639',
-  email: 'info@emaar-furniture.com',
+  email: 'info@globalgate.ly',
   whatsapp: 'https://wa.me/218935555639',
   addressEn: 'Ain Zara, near Al-Qarqani Petrol Station, Tripoli, Libya',
   addressAr: 'عين زارة، بالقرب من محطة وقود القرقني، طرابلس، ليبيا',
@@ -38,9 +40,9 @@ export const whyLibya = [
     titleEn: 'An Economy in Motion',
     titleAr: 'اقتصاد في حركة',
     bodyEn:
-      'Returning oil production has injected major government liquidity. Infrastructure projects are moving after years of pause. The local market has a sharp shortage of quality services — that gap is the opportunity.',
+      "Libya's ongoing political, security, and economic transformation is reshaping the investment landscape, driving international interest across strategic sectors and unlocking new growth opportunities.",
     bodyAr:
-      'عادت معدلات إنتاج النفط إلى مستويات مرتفعة، ضخّت سيولة حكومية كبيرة. مشاريع البنية التحتية بدأت تتحرك. والسوق المحلي يعاني نقصاً حاداً في الخدمات الجيدة — وهذا الفراغ بالتحديد هو الفرصة.',
+      'تشهد ليبيا تحولاً سياسياً وأمنياً واقتصادياً متواصلاً يعيد رسم المشهد الاستثماري، ويعزز اهتمام المستثمرين الدوليين بالقطاعات الاستراتيجية، ويفتح آفاقاً جديدة للنمو والتوسع.',
   },
   {
     id: 2,
@@ -65,12 +67,12 @@ export const whyLibya = [
   {
     id: 4,
     icon: '◐',
-    titleEn: 'Lower Cost. Bigger Return.',
-    titleAr: 'تكلفة أقل. عائد أكبر.',
+    titleEn: 'Early Investment. Higher Value.',
+    titleAr: 'استثمار مبكر. قيمة أعلى.',
     bodyEn:
-      'The cost of market entry today is far lower than it will be in three years. Competitive advantage is built during ambiguity — not after certainty.',
+      'Entering the market at this stage offers strategic advantages and lower entry costs, while the strongest competitive positions are established during periods of transition — before opportunities become widely accessible.',
     bodyAr:
-      'تكلفة الدخول في السوق الليبي اليوم أقل بكثير مما ستكون عليه بعد ثلاث سنوات. الميزة التنافسية تُبنى في مرحلة الغموض، لا بعد اليقين.',
+      'يمنح الدخول إلى السوق في هذه المرحلة مزايا استراتيجية وتكاليف دخول أقل، فيما تُبنى المواقع التنافسية الأقوى خلال فترات التحول، قبل أن تصبح الفرص متاحة على نطاق واسع.',
   },
 ]
 
@@ -163,19 +165,22 @@ export const values = [
 export const ceoMessage = {
   en: `Libya has witnessed significant political, security, and economic shifts in recent years — coinciding with the entry of international companies in energy and infrastructure sectors. Yet market entry remains complex: relationships and trust play a pivotal role in accessing opportunities and executing business locally. International investors face a transparency and analytical information gap that limits clarity and complicates risk assessment. Global Gate operates as a strategic local partner bridging both models. We don't just provide data — we reframe market dynamics in a clear operational context that enables precise understanding of the investment environment and informed decision-making, backed by a trusted local network that reduces operational risk.`,
   ar: `شهدت ليبيا خلال السنوات الأخيرة تحولات سياسية وأمنية واقتصادية ملحوظة، تزامنت مع دخول شركات دولية في قطاعات الطاقة والبنية التحتية. ورغم هذا التوسع، يظل دخول السوق معقدًا حيث تلعب العلاقات والثقة دورًا محوريًا. يعاني المستثمر الدولي من فجوة في الشفافية والمعلومات التحليلية. البوابة العالمية تعمل كشريك استراتيجي محلي يربط بين النموذجين. نحن لا نقدم بيانات فقط، بل نعيد صياغة ديناميكيات السوق في إطار تشغيلي واضح يمكّن من اتخاذ قرارات دقيقة.`,
-  signatureEn: '— Leadership, Global Gate | Tripoli, Libya 2026',
-  signatureAr: '— القيادة، البوابة العالمية | طرابلس، ليبيا 2026',
+  signatureNameEn: 'Yumna Bahri',
+  signatureTitleEn: 'Chief Executive Officer',
+  signatureNameAr: 'يمنى بحري',
+  signatureTitleAr: 'الرئيسة التنفيذية',
 }
 
 export const sectors = [
+  { en: 'Government & Public Sector', ar: 'القطاع الحكومي والعام' },
   { en: 'Financial Services & Investment', ar: 'الخدمات المالية والاستثمار' },
   { en: 'Energy & Natural Resources', ar: 'الطاقة والموارد الطبيعية' },
   { en: 'Infrastructure & Construction', ar: 'البنية التحتية والإنشاءات' },
   { en: 'Technology & Artificial Intelligence', ar: 'التكنولوجيا والذكاء الاصطناعي' },
   { en: 'Healthcare & Life Sciences', ar: 'الرعاية الصحية وعلوم الحياة' },
-  { en: 'Transport, Logistics & Trade', ar: 'النقل والخدمات اللوجستية والتجارة' },
-  { en: 'Agriculture & Food Industries', ar: 'الزراعة والصناعات الغذائية' },
-  { en: 'Exhibitions, Conferences & Events', ar: 'المعارض والمؤتمرات والفعاليات' },
+  { en: 'Transportation, Logistics & Trade', ar: 'النقل والخدمات اللوجستية والتجارة' },
+  { en: 'Agriculture, Food & Consumer Industries', ar: 'الزراعة والصناعات الغذائية والاستهلاكية' },
+  { en: 'MICE Industry', ar: 'المعارض والمؤتمرات والفعاليات التجارية' },
 ]
 
 export const services = [
@@ -297,18 +302,17 @@ export const services = [
 ]
 
 export const ctaContent = {
-  headlineEn:
-    "If you're thinking about the Libyan market — you need a partner who knows it from the inside.",
-  headlineAr: 'إذا كنت تفكر في السوق الليبي — فأنت تحتاج شريكاً يعرفه من الداخل.',
+  headlineEn: 'Considering the Libyan market?',
+  headlineAr: 'تفكر في السوق الليبي؟',
   bodyEn:
-    "We don't sell you a study. We don't promise guarantees. We sit with you, understand your goal, and tell you honestly whether the opportunity is real and how to reach it.",
+    'Success begins with understanding the realities behind the opportunity. We help investors and businesses assess market potential, navigate the local landscape, and make informed decisions based on insight, experience, and execution — not assumptions.',
   bodyAr:
-    'لا نبيعك دراسة. لا نعدك بضمانات. نجلس معك، نفهم هدفك، ونخبرك بصدق ما إذا كانت الفرصة حقيقية وكيف تصل إليها.',
+    'يبدأ النجاح بفهم الحقائق الكامنة خلف الفرصة. نساعد المستثمرين والشركات على تقييم إمكانات السوق، والتنقل في المشهد المحلي، واتخاذ قرارات مدروسة قائمة على الرؤية والخبرة والتنفيذ — لا على الافتراضات.',
 }
 
 export const navLinks = [
   { pathEn: '/', labelEn: 'Home', labelAr: 'الرئيسية' },
-  { pathEn: '/about', labelEn: 'About', labelAr: 'من نحن' },
+  { pathEn: '/about', labelEn: 'About Us', labelAr: 'من نحن' },
   { pathEn: '/services', labelEn: 'Services', labelAr: 'خدماتنا' },
   { pathEn: '/connect', labelEn: 'Connect', labelAr: 'تواصل معنا' },
 ]

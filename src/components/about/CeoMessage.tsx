@@ -21,7 +21,7 @@ export default function CeoMessage() {
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16">
         <div className="mb-10 rtl:text-right">
           <Eyebrow className="mb-3">
-            {lang === 'en' ? 'A Word from Leadership' : 'كلمة القيادة'}
+            {lang === 'en' ? 'CEO Message' : 'رسالة الرئيسة التنفيذية'}
           </Eyebrow>
           <GoldRule className="mb-5" />
         </div>
@@ -32,8 +32,13 @@ export default function CeoMessage() {
           <p className="font-display text-[#EDE5D0] text-lg md:text-xl leading-relaxed mb-6 rtl:font-arabic">
             {lang === 'en' ? ceoMessage.en : ceoMessage.ar}
           </p>
-          <footer className="font-sans text-[#B8893C] text-sm uppercase tracking-widest rtl:font-arabic">
-            {lang === 'en' ? ceoMessage.signatureEn : ceoMessage.signatureAr}
+          <footer className="rtl:text-right">
+            <div className="font-display text-[#B8893C] text-base font-semibold rtl:font-arabic">
+              {lang === 'en' ? ceoMessage.signatureNameEn : ceoMessage.signatureNameAr}
+            </div>
+            <div className="font-sans text-[#7A8BAA] text-xs uppercase tracking-widest mt-1 rtl:font-arabic">
+              {lang === 'en' ? ceoMessage.signatureTitleEn : ceoMessage.signatureTitleAr}
+            </div>
           </footer>
         </blockquote>
       </div>

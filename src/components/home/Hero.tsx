@@ -2,10 +2,9 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import Logo from '../ui/Logo'
 import Button from '../ui/Button'
 import { useLanguage } from '../../context/LanguageContext'
-import { heroContent } from '../../data'
+import { company, heroContent } from '../../data'
 
 const container = {
   hidden: {},
@@ -86,10 +85,9 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
           >
-            <Logo size="hero" />
-            <div className="flex items-center gap-2 mt-3 rtl:flex-row-reverse">
+            <div className="flex items-center gap-2 rtl:flex-row-reverse">
               <span className="text-[#7A8BAA] text-xs tracking-widest uppercase font-light">
-                {lang === 'en' ? 'Investment Advisory' : 'استشارات استثمارية'}
+                {lang === 'en' ? company.subtitleEn : company.subtitleAr}
               </span>
               <span className="text-[#B8893C]/40 text-xs">·</span>
               <span className="text-[#7A8BAA] text-xs tracking-widest uppercase font-light">

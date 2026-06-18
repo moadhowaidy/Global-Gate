@@ -22,7 +22,7 @@ export default function Footer() {
                   {lang === 'en' ? company.nameEn : company.nameAr}
                 </p>
                 <p className="font-sans text-[#7A8BAA]/50 text-[9px] uppercase tracking-widest mt-1">
-                  {lang === 'en' ? 'Investment Advisory' : 'الاستشارات الاستثمارية'}
+                  {lang === 'en' ? company.subtitleEn : company.subtitleAr}
                 </p>
               </div>
             </div>
@@ -57,25 +57,27 @@ export default function Footer() {
               {lang === 'en' ? 'Contact' : 'التواصل'}
             </h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 rtl:flex-row-reverse">
+              <li className="flex items-start gap-3">
                 <Phone size={14} className="text-[#B8893C] mt-0.5 shrink-0" />
                 <a
                   href={`tel:${contact.phone}`}
-                  className="font-sans text-sm text-[#7A8BAA] hover:text-[#B8893C] transition-colors duration-200"
+                  dir="ltr"
+                  className="font-sans text-sm text-[#7A8BAA] hover:text-[#B8893C] transition-colors duration-200 rtl:text-right"
                 >
                   {contact.phoneDisplay}
                 </a>
               </li>
-              <li className="flex items-start gap-3 rtl:flex-row-reverse">
+              <li className="flex items-start gap-3">
                 <Mail size={14} className="text-[#B8893C] mt-0.5 shrink-0" />
                 <a
                   href={`mailto:${contact.email}`}
-                  className="font-sans text-sm text-[#7A8BAA] hover:text-[#B8893C] transition-colors duration-200 break-all"
+                  dir="ltr"
+                  className="font-sans text-sm text-[#7A8BAA] hover:text-[#B8893C] transition-colors duration-200 break-all rtl:text-right"
                 >
                   {contact.email}
                 </a>
               </li>
-              <li className="flex items-start gap-3 rtl:flex-row-reverse">
+              <li className="flex items-start gap-3">
                 <MapPin size={14} className="text-[#B8893C] mt-0.5 shrink-0" />
                 <span className="font-sans text-sm text-[#7A8BAA] rtl:font-arabic">
                   {lang === 'en' ? contact.addressEn : contact.addressAr}
@@ -108,6 +110,17 @@ export default function Footer() {
               : `© ${company.founded} البوابة العالمية — جميع الحقوق محفوظة`}
           </p>
         </div>
+        <p className="font-sans text-center text-[#7A8BAA]/50 pb-4" style={{ fontSize: '10px', letterSpacing: '0.06em' }}>
+          Powered by{' '}
+          <a
+            href="https://swiftscaled.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#8B0000', textDecoration: 'none' }}
+          >
+            SWIFTSCAL
+          </a>
+        </p>
       </div>
     </footer>
   )

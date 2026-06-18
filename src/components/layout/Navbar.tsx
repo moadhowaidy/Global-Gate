@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react'
 import Logo from '../ui/Logo'
 import LangToggle from '../ui/LangToggle'
 import { useLanguage } from '../../context/LanguageContext'
-import { navLinks } from '../../data'
+import { company, navLinks } from '../../data'
 
 export default function Navbar() {
   const { lang } = useLanguage()
@@ -34,17 +34,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20 rtl:flex-row-reverse">
 
           {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-3 rtl:flex-row-reverse">
+          <NavLink to="/" className="flex-shrink-0 flex items-center gap-3 rtl:flex-row-reverse">
             <Logo size="nav" />
-            <div className="hidden sm:flex flex-col gap-0.5 rtl:items-end">
+            <div className="hidden sm:flex flex-col gap-0.5 whitespace-nowrap rtl:items-end">
               <span className="font-display text-[#B8893C] text-sm tracking-[0.16em] uppercase leading-none">
                 {lang === 'en' ? 'GLOBAL GATE' : 'البوابة العالمية'}
               </span>
-              <span className="font-arabic text-[#7A8BAA] text-xs leading-snug">
-                {lang === 'en' ? 'البوابة العالمية' : 'Global Gate'}
-              </span>
-              <span className="text-[#7A8BAA]/50 text-[9px] tracking-widest uppercase">
-                {lang === 'en' ? 'Investment Advisory' : 'الاستشارات الاستثمارية'}
+              <span className="text-[#7A8BAA]/50 text-[9px] tracking-widest uppercase rtl:font-arabic">
+                {lang === 'en' ? company.subtitleEn : company.subtitleAr}
               </span>
             </div>
           </NavLink>

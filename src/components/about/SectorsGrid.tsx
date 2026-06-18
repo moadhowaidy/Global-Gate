@@ -21,15 +21,15 @@ export default function SectorsGrid() {
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16">
         <div className="mb-12 rtl:text-right">
           <Eyebrow className="mb-3">
-            {lang === 'en' ? 'Target Sectors' : 'القطاعات المستهدفة'}
+            {lang === 'en' ? 'Industries We Serve' : 'القطاعات التي نخدمها'}
           </Eyebrow>
           <GoldRule className="mb-5" />
           <h2 className="font-display text-[#EDE5D0] text-3xl md:text-4xl font-semibold rtl:font-arabic">
-            {lang === 'en' ? 'Where We Operate' : 'مجالات عملنا'}
+            {lang === 'en' ? 'Industries We Serve' : 'القطاعات التي نخدمها'}
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1.5 gold-grid">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1.5 gold-grid">
           {sectors.map((sector, i) => (
             <motion.div
               key={i}
