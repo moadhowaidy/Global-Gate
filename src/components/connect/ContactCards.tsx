@@ -42,7 +42,8 @@ export default function ContactCards() {
                   </p>
                   <a
                     href={`tel:${contact.phone}`}
-                    className="font-sans text-[#EDE5D0] text-base hover:text-[#B8893C] transition-colors duration-200"
+                    dir="ltr"
+                    className="font-sans text-[#EDE5D0] text-base hover:text-[#B8893C] transition-colors duration-200 rtl:text-right"
                   >
                     {contact.phoneDisplay}
                   </a>
